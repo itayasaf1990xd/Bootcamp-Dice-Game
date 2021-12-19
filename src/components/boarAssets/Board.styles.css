@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.blurContainer {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+.background {
+  position: absolute;
+  background-image: url("./pexels-anna-shvets-6664193.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(10px);
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+.bodyContainer {
+  height: 100vh;
+  width: 100vw;
+}
+.playerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+#player1 {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius:10px ;
+  width: 40%;
+  height: 70vh;
+  background-color: #eeeeee;
+  display: flex;
+  justify-content: center;
+}
+#player2 {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 40%;
+  height: 70vh;
+  background-color: #eeeeee;
+  display: flex;
+  justify-content: center;
+}
+.colors {
+  background-color: #dddddd !important;
+}
+span {
+  color: #da0037;
+}
+p {
+  font-size: 2rem;
+}
+.winner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #e8e1d9;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #393e46;
+}
+.winner p {
+  font-size: 5vw;
+  margin-bottom: 2rem;
+}
+.btn {
+  width: max-content;
+  height: min-content;
+  background-color: #00adb5;
+  border-radius: 28px;
+  border: 2px solid #009ba3;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 1rem;
+  padding: 8px 15px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #00adb5;
+  margin-bottom: 15px;
+}
+.btn:hover {
+  background-color: #009ba3;
+  border: 2px solid #00adb5;
+}
+.inputsContainer {
+  position: absolute;
+  top: 60vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input {
+  padding: 10px 0 10px 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
